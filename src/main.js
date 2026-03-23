@@ -160,3 +160,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     alert("✅ Message sent! WhatsApp should open now.");
   }, 2000);
 });
+
