@@ -140,7 +140,7 @@ img { max-width: 100%; height: auto; }
 .hero {
   min-height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.6)), 
-              url('../src/assets/hero-background.jpg') center/cover no-repeat;
+              url('../assets/hero-background.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
