@@ -59,14 +59,14 @@ img { max-width: 100%; height: auto; }
 .header.scrolled .logo img { height: 100%; }
 /* Fix logo size jump when scrolling back to top */
 .logo img {
-  height: 80px !important;          /* normal size */
+  height: 84px !important;          /* normal size */
   width: auto;
   object-fit: contain;
-  transition: height 0.4s cubic-bezier(0.34,1.56,0.64,1);
+  transition: height 0.2s cubic-bezier(0.34,1.56,0.64,1);
 }
 
 .header.scrolled .logo img {
-  height: 73px !important;          /* scrolled size */
+  height: 70px !important;          /* scrolled size */
 }
 
 .nav {
