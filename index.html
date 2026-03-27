@@ -509,19 +509,36 @@ if (contactForm) {
     }, 2000);
   });
 }
-document.querySelectorAll(".btn order-btn shine-btn").forEach(button => {
-  button.addEventListener("click", () => {
-    const product = button.dataset.product;
 
-    const message =
-      `Hello Luciana Home of Cakes! 🎂\n\n` +
-      `I would like to order:\n` +
-      `Product: ${product}\n\n` +
-      `Please share price, sizes, and availability. Thank you! 😊`;
 
-    const url = `https://wa.me/2347065346336?text=${encodeURIComponent(message)}`;
+ document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".btn.order-btn.shine-btn").forEach(button => {
+    button.addEventListener("click", () => {
 
-    window.open(url, "_blank");
+      const product = button.dataset.product;
+
+      const images = {
+        "Luciana Butter Bread": "https://lucianna-1.vercel.app/assets/lucianabread.jpg",
+        "Chocolate Indulgence": "https://lucianna-1.vercel.app/assets/chocolate-indulgence.jpg",
+        "Creamy Yoghurt Parfait": "https://lucianna-1.vercel.app/assets/parfar.jpg",
+        "Chocolate Fruity Bread": "https://lucianna-1.vercel.app/assets/bread2.jpg",
+        "Chops": "https://lucianna-1.vercel.app/assets/fries.jpg",
+        "Milky Donut Pack": "https://lucianna-1.vercel.app/assets/snacks.jpg"
+      };
+
+      const imageUrl = images[product] || "https://lucianna-1.vercel.app/assets/snacks.jpg";
+
+      const message =
+        `Hello Luciana Home of Cakes! 🎂\n\n` +
+        `I want to order:\n` +
+        `Product: ${product}\n\n` +
+        `Here is the product image:\n${imageUrl}\n\n` +
+        `Please confirm availability. Thank you! 😊`;
+
+      const url = `https://wa.me/2347065346336?text=${encodeURIComponent(message)}`;
+
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
   });
 });
  </script>
