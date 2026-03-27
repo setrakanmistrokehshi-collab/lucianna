@@ -36,7 +36,11 @@
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a href="https://wa.me/2347065346336" class="btn order-btn shine-btn" target="_blank">Place Your Order</a>
+      <a href="https://wa.me/2347065346336?text=Hello%20Luciana%20Home%20of%20Cakes!%20🎂%0A%0AI%27m%20interested%20in%20ordering%20a%20cake.%20Please%20tell%20me%20your%20flavors%2C%20sizes%2C%20prices%2C%20and%20how%20to%20place%20an%20order.%20Thank%20you!%20✨" 
+   class="btn order-btn shine-btn" 
+   target="_blank">
+   Place Your Order
+</a>
     </div>
   </header>
 
@@ -44,7 +48,7 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h1 class="hero-title">Love At First Bite</h1>
-      <p class="hero-subtitle">Premium cakes & pastries crafted with love in Lagos</p>
+      <p class="hero-subtitle">Luciana Premium cakes & pastries crafted with love in Lagos</p>
       <a href="#menu" class="btn primary-btn shine-btn">Browse Menu</a>
     </div>
   </section>
@@ -86,55 +90,75 @@
   </section>
 
   <!-- MENU -->
-  <section id="menu" class="section">
-    <div class="container-2">
-      <h2>Signature Creations</h2>
-      <div class="menu-grid">
-        <div class="menu-card reveal">
-          <img src="/assets/lucianabread.jpg" alt="Luciana Butter Bread">
-          <div class="menu-content">
-            <h3>Luciana Butter Bread</h3>
-            <p class="price">₦4,000-₦15,000</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <img src="/assets/chocolate-indulgence.jpg" alt="Chocolate cake">
-          <div class="menu-content">
-            <h3>Chocolate Indulgence</h3>
-            <p class="price">₦20,000-₦40,000</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <img src="/assets/parfar.jpg" alt="Parfait">
-          <div class="menu-content">
-            <h3>creamy youghurt parfait</h3>
-            <p class="price">₦10,500 – ₦20,000</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <img src="/assets/bread2.jpg" alt="chocolate bread">
-          <div class="menu-content">
-            <h3>Chocolate Fruity Bread</h3>
-            <p class="price">₦10,000 – ₦25,000</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <img src="/assets/fries.jpg" alt="Fries">
-          <div class="menu-content">
-            <h3>Chops</h3>
-            <p class="price">₦5,500 – ₦20,000</p>
-          </div>
-        </div>
-        <div class="menu-card reveal">
-          <img src="/assets/snacks.jpg" alt="Milky Donut">
-          <div class="menu-content">
-            <h3>Milky Donut Pack</h3>
-            <p class="price">₦7,500 – ₦20,000</p>
-          </div>
+ <section id="menu" class="section"> 
+  <div class="container-2">
+    <h2>Signature Creations</h2>
+
+    <div class="menu-grid">
+
+      <!-- 1 -->
+      <div class="menu-card reveal">
+        <img src="/assets/lucianabread.jpg" alt="Luciana Butter Bread">
+        <div class="menu-content">
+          <h3>Luciana Butter Bread</h3>
+          <p class="price">₦4,000 - ₦15,000</p>
+          <button class="btn order-btn shine-btn" data-product="Luciana Butter Bread">Order Now</button>
         </div>
       </div>
+
+      <!-- 2 -->
+      <div class="menu-card reveal">
+        <img src="/assets/chocolate-indulgence.jpg" alt="Chocolate Indulgence">
+        <div class="menu-content">
+          <h3>Chocolate Indulgence</h3>
+          <p class="price">₦20,000 - ₦40,000</p>
+          <button class="btn order-btn shine-btn" data-product="Chocolate Indulgence">Order Now</button>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="menu-card reveal">
+        <img src="/assets/parfar.jpg" alt="Creamy Yoghurt Parfait">
+        <div class="menu-content">
+          <h3>Creamy Yoghurt Parfait</h3>
+          <p class="price">₦10,500 - ₦20,000</p>
+          <button class="btn order-btn shine-btn" data-product="Creamy Yoghurt Parfait">Order Now</button>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="menu-card reveal">
+        <img src="/assets/bread2.jpg" alt="Chocolate Fruity Bread">
+        <div class="menu-content">
+          <h3>Chocolate Fruity Bread</h3>
+          <p class="price">₦10,000 - ₦25,000</p>
+          <button class="btn order-btn shine-btn" data-product="Chocolate Fruity Bread">Order Now</button>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="menu-card reveal">
+        <img src="/assets/fries.jpg" alt="Chops">
+        <div class="menu-content">
+          <h3>Chops</h3>
+          <p class="price">₦5,500 - ₦20,000</p>
+          <button class="btn order-btn shine-btn" data-product="Chops">Order Now</button>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="menu-card reveal">
+        <img src="/assets/snacks.jpg" alt="Milky Donut Pack">
+        <div class="menu-content">
+          <h3>Milky Donut Pack</h3>
+          <p class="price">₦7,500 - ₦20,000</p>
+          <button class="btn order-btn shine-btn" data-product="Milky Donut Pack">Order Now</button>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
  <!-- TESTIMONIALS SECTION -->
 <section id="testimonials" class="testimonials-section">
@@ -250,7 +274,7 @@
           the freshest ingredients, and that's luciana signature touch.
         
         </p>
-        <p>Today we have our new product which is <H3>LUCIANA BUTTER BREAD</H3> Registered as with NAFDAQ</p>
+        <p>Today we have our new product which is <H3>LUCIANA BUTTER BREAD</H3> Registered with NAFDAQ</p>
 
         <div class="quick-facts">
           <div class="fact">
@@ -485,6 +509,21 @@ if (contactForm) {
     }, 2000);
   });
 }
+document.querySelectorAll(".btn order-btn shine-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const product = button.dataset.product;
+
+    const message =
+      `Hello Luciana Home of Cakes! 🎂\n\n` +
+      `I would like to order:\n` +
+      `Product: ${product}\n\n` +
+      `Please share price, sizes, and availability. Thank you! 😊`;
+
+    const url = `https://wa.me/2347065346336?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  });
+});
  </script>
 </body>
 </html>
